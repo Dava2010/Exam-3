@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрирование контейнера */
+header {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#dark-mode-toggle{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.seleht{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleht select{
+    margin-top: 20px;
+}
+
+/* Выравнивание селекта и кнопки */
+select,
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* Контейнер для товаров */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Карточка товара */
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    width: 200px;
+    height: 380px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 190px;
+    height: 200px;
+}
+
+/* Темный режим */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .product {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+.dark-mode select,
+.dark-mode button {
+    background: #444;
+    color: white;
+}
+
+.label{
+    margin-top: 20px;
+}
+
+#search{
+    width: 150px;
+    height: 25px;
+    border: 1px solid aqua;
+    background-color: aqua;
+    border-radius: 5px;
+}

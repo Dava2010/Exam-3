@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин короче</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Магазин</h1>
+        <input type="text" id="search" placeholder="Поиск товара..."><br>
+        <label for="sort" class="label">Сортировка:</label>
+        <div class="seleht">
+            <select id="sort">
+                <option value="name-asc">От А до Я</option>
+                <option value="name-desc">От Я до А</option>
+                <option value="price-asc">дешёвые → дорогие</option>
+                <option value="price-desc">дорогие → дешёвые</option>
+            </select>
+        </div>
+    
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <div id="product-list" class="products"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
